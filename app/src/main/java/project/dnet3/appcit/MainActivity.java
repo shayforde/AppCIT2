@@ -1,5 +1,6 @@
 package project.dnet3.appcit;
 
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
@@ -100,7 +101,10 @@ public class MainActivity extends ActionBarActivity {
                 case R.id.button1:
                     //    Log.i("CIT App", "Button 1 has been pressed");
                     Toast.makeText( getActivity(), R.string.button1, Toast.LENGTH_SHORT).show();
+
+                    Intent intent = new Intent(getActivity(), ViewCIT.class);
                     break;
+
                 case R.id.button2:
                     //switchFragment(SettingsFragment.TAG);
                     Toast.makeText( getActivity(), R.string.button2, Toast.LENGTH_SHORT).show();
@@ -128,7 +132,7 @@ public class MainActivity extends ActionBarActivity {
                     break;
 
                 case R.id.button5:
-                    Log.i("CIT App", "Button 1 has been pressed");
+                    Log.i("CIT App", "Button 5 has been pressed");
                     Toast.makeText( getActivity(),  R.string.button5, Toast.LENGTH_SHORT).show();
                     break;
                 case R.id.button6:
