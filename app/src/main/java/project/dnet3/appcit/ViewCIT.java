@@ -1,22 +1,35 @@
 package project.dnet3.appcit;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class ViewCIT extends ActionBarActivity {
+
+    WebView mWebview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_cit);
-     //   super.onCreate(savedInstanceState);
 
+        // final Activity activity = this;
+        connectWebView();
+
+        // mWebview.loadUrl("https://dl.dropboxusercontent.com/u/79441161/startup/DBstartpage.html");
+        mWebview.loadUrl("http://www.mycit.ie/");
+        setContentView(mWebview );
+
+/*
         // Get the message from the intent
         Intent intent = getIntent();
        // String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
@@ -28,10 +41,25 @@ public class ViewCIT extends ActionBarActivity {
 
         // Set the text view as the activity layout
         setContentView(textView);
-
+*/
 
 
         Log.i("CIT App", "ViewCIT constructor called");
+    }
+
+    void connectWebView(){
+
+        mWebview  = new WebView(this);
+
+        mWebview.getSettings().setJavaScriptEnabled(true); // enable javascript
+
+        final Activity activity = this;
+        mWebview.setWebViewClient(new WebViewClient() {
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
 /*

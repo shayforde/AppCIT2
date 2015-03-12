@@ -103,6 +103,7 @@ public class MainActivity extends ActionBarActivity {
                     Toast.makeText( getActivity(), R.string.button1, Toast.LENGTH_SHORT).show();
 
                     Intent intent = new Intent(getActivity(), ViewCIT.class);
+                    startActivity( intent );
                     break;
 
                 case R.id.button2:
