@@ -19,10 +19,12 @@
         </activity>
         <activity android:name="project.dnet3.appcit.BlackboardActivity"
             android:parentActivityName=".MainActivity"/>
-        <activity android:name="project.dnet3.appcit.SportsHandbook" />
-        <activity android:name="project.dnet3.appcit.HandbookActivity" />
         <activity android:name="project.dnet3.appcit.ViewCIT" />
         <activity android:name="project.dnet3.appcit.WebsiteActivity" />
+        <activity android:name="project.dnet3.appcit.TopUpActivity" />
+        <activity android:name="project.dnet3.appcit.HandbooksActivity" />
+        <activity android:name="project.dnet3.appcit.StudentHandbookActivity" />
+        <activity android:name="project.dnet3.appcit.SportsHandbookActivity" />
 
 
     </application>

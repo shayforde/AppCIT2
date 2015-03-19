@@ -96,20 +96,23 @@ public class MainActivity extends ActionBarActivity {
 
         @Override
         public void onClick(View v) {
-
+            Intent intent;
             //do what you want to do when button is clicked
             switch (v.getId()) {
                 case R.id.button1:
                     //    Log.i("CIT App", "Button 1 has been pressed");
                     Toast.makeText( getActivity(), R.string.button1, Toast.LENGTH_SHORT).show();
 
-                    Intent intent = new Intent(getActivity(), ViewCIT.class);
+                    intent = new Intent(getActivity(), ViewCIT.class);
                     startActivity( intent );
                     break;
 
                 case R.id.button2:
                     //switchFragment(SettingsFragment.TAG);
                     Toast.makeText( getActivity(), R.string.button2, Toast.LENGTH_SHORT).show();
+
+                    intent = new Intent(getActivity(), HandbooksActivity.class);
+                    startActivity( intent );
                     break;
 
                 case R.id.button3:
