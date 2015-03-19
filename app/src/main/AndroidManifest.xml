@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".HandbookActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,11 +20,10 @@
         <activity
             android:name=".ViewCIT"
             android:label="@string/title_activity_view_cit"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".HandbookActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="project.dnet3.appcit.MainActivity" />
+                android:value="project.dnet3.appcit.HandbookActivity" />
         </activity>
     </application>
-
 </manifest>
