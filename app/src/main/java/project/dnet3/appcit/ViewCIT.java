@@ -15,7 +15,7 @@ import android.widget.Toast;
 
 public class ViewCIT extends ActionBarActivity {
 
-    WebView mWebview;
+//    WebView mWebview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,11 +23,12 @@ public class ViewCIT extends ActionBarActivity {
         setContentView(R.layout.activity_view_cit);
 
         // final Activity activity = this;
-        connectWebView();
+//        connectWebView();
 
         // mWebview.loadUrl("https://dl.dropboxusercontent.com/u/79441161/startup/DBstartpage.html");
-        mWebview.loadUrl("http://www.mycit.ie/");
-        setContentView(mWebview );
+        //mWebview.loadUrl("http://www.mycit.ie/");
+ //       mWebview.loadUrl("https://www.dropbox.com/s/nqagpfq6ku85k97/mainindex.html?dl=0");
+//        setContentView(mWebview );
 
 /*
         // Get the message from the intent
@@ -46,7 +47,7 @@ public class ViewCIT extends ActionBarActivity {
 
         Log.i("CIT App", "ViewCIT constructor called");
     }
-
+/*
     void connectWebView(){
 
         mWebview  = new WebView(this);
@@ -61,7 +62,7 @@ public class ViewCIT extends ActionBarActivity {
         });
 
     }
-
+*/
 /*
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

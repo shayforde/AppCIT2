@@ -63,7 +63,7 @@
                 android:id="@+id/button6"
                 android:layout_below="@+id/button5"
                 android:layout_centerVertical="true" />
-
+<!--
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -79,6 +79,7 @@
                 android:id="@+id/button8"
                 android:layout_below="@+id/button7"
                 android:layout_centerVertical="true" />
+-->
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

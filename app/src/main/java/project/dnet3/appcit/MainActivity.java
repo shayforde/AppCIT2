@@ -84,13 +84,13 @@ public class MainActivity extends ActionBarActivity {
 
             Button button6 = (Button) v.findViewById(R.id.button6);
             button6.setOnClickListener(this);
-
+/*
             Button button7 = (Button) v.findViewById(R.id.button7);
             button7.setOnClickListener(this);
 
             Button button8 = (Button) v.findViewById(R.id.button8);
             button8.setOnClickListener(this);
-
+*/
             return v;
         }
 
@@ -141,15 +141,17 @@ public class MainActivity extends ActionBarActivity {
                     //switchFragment(SettingsFragment.TAG);
                     Toast.makeText( getActivity(),  R.string.button6, Toast.LENGTH_SHORT).show();
                     break;
-
+/*
                 case R.id.button7:
                     Log.i("CIT App", "Button 1 has been pressed");
                     Toast.makeText( getActivity(),  R.string.button7, Toast.LENGTH_SHORT).show();
                     break;
+
                 case R.id.button8:
                     //switchFragment(SettingsFragment.TAG);
                     Toast.makeText( getActivity(),  R.string.button8, Toast.LENGTH_SHORT).show();
                     break;
+*/
                 default:
             }
         }
