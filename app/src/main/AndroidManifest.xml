@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name="project.dnet3.appcit.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,13 +17,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ViewCIT"
-            android:label="@string/title_activity_view_cit"
-            android:parentActivityName=".HandbookActivity" >
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value="project.dnet3.appcit.HandbookActivity" />
-        </activity>
+        <activity android:name="project.dnet3.appcit.BlackboardActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name="project.dnet3.appcit.SportsHandbook" />
+        <activity android:name="project.dnet3.appcit.HandbookActivity" />
+        <activity android:name="project.dnet3.appcit.ViewCIT" />
+        <activity android:name="project.dnet3.appcit.WebsiteActivity" />
+
+
     </application>
 </manifest>

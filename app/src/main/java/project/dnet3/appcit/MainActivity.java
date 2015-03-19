@@ -19,8 +19,8 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-     //   setContentView(R.layout.act_handbook);
-        setContentView(R.layout.fragment_main);
+     //   setContentView(R.layout.activity_viewpdf);
+        setContentView(R.layout.activity_main);
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
@@ -65,7 +65,7 @@ public class MainActivity extends ActionBarActivity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
-            View v = inflater.inflate(R.layout.fragment_main, container, false);
+            View v = inflater.inflate(R.layout.activity_main, container, false);
 
             Button button1 = (Button) v.findViewById(R.id.button1);
             button1.setOnClickListener(this);

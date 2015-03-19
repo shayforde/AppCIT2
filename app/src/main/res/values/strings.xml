@@ -12,7 +12,7 @@
 
     <string name="buttViewCitBlackboard">Blackboard</string>
     <string name="buttViewCitCardTopUp">Card Top Up</string>
-    <string name="buttViewCitWebsite">View my CIT Website</string>
+    <string name="buttViewCitWebsite">View my CIT\nWebsite</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_view_cit">ViewCIT</string>

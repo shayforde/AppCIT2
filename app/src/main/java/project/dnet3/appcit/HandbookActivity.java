@@ -27,7 +27,7 @@ public class HandbookActivity extends ActionBarActivity implements OnPageChangeL
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_handbook);
+        setContentView(R.layout.activity_viewpdf);
         pdfView = (PDFView) findViewById(R.id.pdfview);
         display(PDF_FILE, true);
 

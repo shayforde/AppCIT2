@@ -23,7 +23,7 @@ public class SportsHandbook extends ActionBarActivity implements OnPageChangeLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_handbook);
+        setContentView(R.layout.activity_viewpdf);
         pdfView = (PDFView) findViewById(R.id.pdfview);
         display(PDF_FILE, true);
 
