@@ -26,7 +26,6 @@ public class SportsHandbookActivity extends ActionBarActivity implements OnPageC
         setContentView(R.layout.activity_viewpdf);
         pdfView = (PDFView) findViewById(R.id.pdfview);
         display(PDF_FILE, true);
-
     }
 
     private void display(String assetFileName, boolean jumpToFirstPage) {

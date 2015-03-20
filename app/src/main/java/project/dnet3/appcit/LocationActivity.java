@@ -5,15 +5,15 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 /**
- * Created by shay on 19/03/2015.
+ * Created by shay on 20/03/2015.
  */
-public class TopUpActivity extends ActionBarActivity {
-
+public class LocationActivity extends ActionBarActivity {
 
     WebView mWebview;
 
@@ -24,9 +24,7 @@ public class TopUpActivity extends ActionBarActivity {
 
         connectWebView();
 
-        //mWebview.loadUrl("https://citcard.cit.ie/icmserver/");
-        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/handbooks");
-
+        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/location");
         setContentView(mWebview );
 
     }

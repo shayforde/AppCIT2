@@ -25,7 +25,7 @@
         <activity android:name="project.dnet3.appcit.HandbooksActivity" />
         <activity android:name="project.dnet3.appcit.StudentHandbookActivity" />
         <activity android:name="project.dnet3.appcit.SportsHandbookActivity" />
-
+        <activity android:name="project.dnet3.appcit.LocationActivity" />
 
     </application>
 </manifest>

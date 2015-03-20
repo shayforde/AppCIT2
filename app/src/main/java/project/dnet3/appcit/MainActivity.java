@@ -143,6 +143,10 @@ public class MainActivity extends ActionBarActivity {
                 case R.id.button6:
                     //switchFragment(SettingsFragment.TAG);
                     Toast.makeText( getActivity(),  R.string.button6, Toast.LENGTH_SHORT).show();
+
+                    intent = new Intent(getActivity(), LocationActivity.class);
+                    startActivity( intent );
+
                     break;
 /*
                 case R.id.button7:

@@ -11,8 +11,6 @@ import android.widget.Button;
 
 
 public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
-
-//    WebView mWebview;
     Button button1;
     Button button2;
     Button button3;
@@ -22,50 +20,8 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view_cit);
 
-
-
-
-        // final Activity activity = this;
-//        connectWebView();
-
-        // mWebview.loadUrl("https://dl.dropboxusercontent.com/u/79441161/startup/DBstartpage.html");
-        //mWebview.loadUrl("http://www.mycit.ie/");
- //       mWebview.loadUrl("https://www.dropbox.com/s/nqagpfq6ku85k97/mainindex.html?dl=0");
-//        setContentView(mWebview );
-
-/*
-        // Get the message from the intent
-        Intent intent = getIntent();
-       // String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
-
-        // Create the text view
-        TextView textView = new TextView(this);
-        textView.setTextSize(40);
-        textView.setText("hello world again");
-
-        // Set the text view as the activity layout
-        setContentView(textView);
-*/
-
-
         Log.i("CIT App", "ViewCIT constructor called");
     }
-/*
-    void connectWebView(){
-
-        mWebview  = new WebView(this);
-
-        mWebview.getSettings().setJavaScriptEnabled(true); // enable javascript
-
-        final Activity activity = this;
-        mWebview.setWebViewClient(new WebViewClient() {
-            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
-            }
-        });
-
-    }
-*/
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -101,8 +57,6 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
         return super.onOptionsItemSelected(item);
     }
 
-
-
     @Override
     public void onClick(View v) {
         //do what you want to do when button is clicked
@@ -137,4 +91,3 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
         }
     }
 }
-

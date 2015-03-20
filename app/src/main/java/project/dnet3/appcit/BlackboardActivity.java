@@ -28,7 +28,8 @@ public class BlackboardActivity extends ActionBarActivity  {
         // mWebview.loadUrl("https://dl.dropboxusercontent.com/u/79441161/startup/DBstartpage.html");
         //mWebview.loadUrl("http://www.mycit.ie/");
    //     mWebview.loadUrl("https://idp.cit.ie/idp/Authn/UserPassword");
-        mWebview.loadUrl("http://citbb.blackboard.com/");
+     //   mWebview.loadUrl("http://192.168.1.102/joomla/index.php/location");
+        mWebview.loadUrl("http://mapsengine.google.com/map/embed?mid=zQH00h_hX520.k4SoJnz7xdy8");
         setContentView(mWebview );
 
 /*
