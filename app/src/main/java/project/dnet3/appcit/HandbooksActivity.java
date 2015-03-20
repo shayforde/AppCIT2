@@ -72,7 +72,7 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, HandbooksActivity.class);
+                intent = new Intent(this, StudentHandbookActivity.class);
                 startActivity( intent );
                 break;
 
@@ -80,7 +80,7 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, StudentHandbookActivity.class);
+                intent = new Intent(this, SportsHandbookActivity.class );
                 startActivity( intent );
                 break;
 

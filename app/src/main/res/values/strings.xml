@@ -17,6 +17,6 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_view_cit">ViewCIT</string>
 
-    <string name="handbook_student">View Student Handbook</string>
-    <string name="handbook_union">View Union Handbook</string>
+    <string name="handbook_student">View Student\nHandbook</string>
+    <string name="handbook_union">View Union\nHandbook</string>
 </resources>
