@@ -10,8 +10,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.Toast;
+
+import static project.dnet3.appcit.R.id.webView;
 
 // add a cooment
 public class MainActivity extends ActionBarActivity {
@@ -28,7 +31,6 @@ public class MainActivity extends ActionBarActivity {
         }
 
         Log.i("CIT APP ", "we's here in onCreate");
-
     }
 
 
@@ -66,6 +68,11 @@ public class MainActivity extends ActionBarActivity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                                  Bundle savedInstanceState) {
             View v = inflater.inflate(R.layout.activity_main, container, false);
+
+            WebView web = (WebView)v.findViewById(R.id.webView2);
+
+            web.loadUrl("http://192.168.1.102/joomla/index.php");
+           // web.loadUrl("http://google.com");
 
             Button button1 = (Button) v.findViewById(R.id.button1);
             button1.setOnClickListener(this);
@@ -145,17 +152,7 @@ public class MainActivity extends ActionBarActivity {
                     startActivity( intent );
 
                     break;
-/*
-                case R.id.button7:
-                    Log.i("CIT App", "Button 1 has been pressed");
-                    Toast.makeText( getActivity(),  R.string.button7, Toast.LENGTH_SHORT).show();
-                    break;
 
-                case R.id.button8:
-                    //switchFragment(SettingsFragment.TAG);
-                    Toast.makeText( getActivity(),  R.string.button8, Toast.LENGTH_SHORT).show();
-                    break;
-*/
                 default:
             }
         }

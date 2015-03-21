@@ -30,6 +30,8 @@
         <activity android:name="project.dnet3.appcit.FacebookActivity" />
         <activity android:name="project.dnet3.appcit.TwitterActivity" />
         <activity android:name="project.dnet3.appcit.SocialMediaActivity" />
+        <activity android:name="project.dnet3.appcit.CITLocationActivity" />
+        <activity android:name="project.dnet3.appcit.FloorPlansActivity" />
 
     </application>
 </manifest>

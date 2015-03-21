@@ -42,7 +42,8 @@ public class SportsHandbookActivity extends ActionBarActivity implements OnPageC
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_viewpdf);
         pdfView = (PDFView) findViewById(R.id.pdfview);
-        display("http://www.mycit.ie/index.cfm/page/handbooks/handbookId/4", true);
+   //     display("http://www.mycit.ie/index.cfm/page/handbooks/handbookId/4", true);
+        display(PDF_FILE, true);
    //     pdfView.load("http://www.mycit.ie/index.cfm/page/handbooks/handbookId/4", true);
     }
 

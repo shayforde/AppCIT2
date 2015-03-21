@@ -22,4 +22,7 @@
 
     <string name="butt_facebook">Facebook</string>
     <string name="butt_twitter">Twitter</string>
+
+    <string name="butt_cit_location">CIT Location</string>
+    <string name="butt_floor_plans">Floor Plans</string>
 </resources>
