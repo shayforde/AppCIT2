@@ -50,38 +50,12 @@ public class SportsHandbookActivity extends ActionBarActivity implements OnPageC
     private void display(String assetFileName, boolean jumpToFirstPage) {
         if (jumpToFirstPage) pageNumber = 1;
         setTitle(fileName = assetFileName);
-/*
+
         pdfView.fromAsset(assetFileName)
                 .defaultPage(1)
                 .onPageChange(this)
                 .load();
-                */
     }
-/*
-    private void load(Uri uri, OnLoadCompleteListener onLoadCompleteListener, int... userPages) {
-        this.uri = uri;
-
-        if (!recycled) {
-            throw new IllegalStateException("Don't call load on a PDF View without recycling it first.");
-        }
-
-        // Manage UserPages if not null
-        if (userPages != null) {
-            this.originalUserPages = userPages;
-            this.filteredUserPages = ArrayUtils.deleteDuplicatedPages(originalUserPages);
-            this.filteredUserPageIndexes = ArrayUtils.calculateIndexesInDuplicateArray(originalUserPages);
-        }
-
-        this.onLoadCompleteListener = onLoadCompleteListener;
-
-        // Start decoding document
-        decodingAsyncTask = new DecodingAsyncTask(uri, this);
-        decodingAsyncTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
-
-        renderingAsyncTask = new RenderingAsyncTask(this);
-        renderingAsyncTask.execute();
-    }
-*/
 
     @Override
     public void onPageChanged(int page, int pageCount) {
