@@ -11,11 +11,11 @@ import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 /**
- * Created by shay on 19/03/2015.
+ * Created by shay on 20/03/2015.
  */
-public class BlackboardActivity extends ActionBarActivity  {
+public class VirtualTourActivity extends ActionBarActivity {
 
-        WebView mWebview;
+    WebView mWebview;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,9 +27,12 @@ public class BlackboardActivity extends ActionBarActivity  {
 
         // mWebview.loadUrl("https://dl.dropboxusercontent.com/u/79441161/startup/DBstartpage.html");
         //mWebview.loadUrl("http://www.mycit.ie/");
-        mWebview.loadUrl("http://citbb.blackboard.com/");
-     //   mWebview.loadUrl("http://192.168.1.102/joomla/index.php/location");
-     //   mWebview.loadUrl("http://mapsengine.google.com/map/embed?mid=zQH00h_hX520.k4SoJnz7xdy8");
+
+        //   mWebview.loadUrl("http://192.168.1.102/joomla/index.php/location");
+        //   mWebview.loadUrl("http://mapsengine.google.com/map/embed?mid=zQH00h_hX520.k4SoJnz7xdy8");
+
+        //mWebview.loadUrl("http://static.dermandar.com/php/getimage.php?epid=bcXRZv&equi=1&h=512&r=1");
+        mWebview.loadUrl("file:///android_asset/virtual_tour.html");
         setContentView(mWebview );
 
 /*
@@ -50,20 +53,20 @@ public class BlackboardActivity extends ActionBarActivity  {
         Log.i("CIT App", "ViewCIT constructor called");
     }
 
-        void connectWebView(){
+    void connectWebView(){
 
-            mWebview  = new WebView(this);
+        mWebview  = new WebView(this);
 
-            mWebview.getSettings().setJavaScriptEnabled(true); // enable javascript
+        mWebview.getSettings().setJavaScriptEnabled(true); // enable javascript
 
-            final Activity activity = this;
-            mWebview.setWebViewClient(new WebViewClient() {
-                public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
-                    Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
-                }
-            });
+        final Activity activity = this;
+        mWebview.setWebViewClient(new WebViewClient() {
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
+            }
+        });
 
-        }
+    }
 
 
     @Override

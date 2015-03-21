@@ -118,27 +118,24 @@ public class MainActivity extends ActionBarActivity {
                 case R.id.button3:
                     Log.i("CIT App", "Button 1 has been pressed");
 
-                    // Create an instance of Fragment1
-           //         CitPortal firstFragment = new CitPortal();
-
-                    // In case this activity was started with special instructions from an Intent,
-                    // pass the Intent's extras to the fragment as arguments
-             //       firstFragment.setArguments(getActivity().getIntent().getExtras());
-
-                    // Add the fragment to the 'fragment_container' FrameLayout
-                    //        getActivity().getSupportFragmentManager().beginTransaction()
-                    //                .add(R.id.fragment_mycitportal, firstFragment).commit();
-
                     Toast.makeText( getActivity(),  R.string.button3, Toast.LENGTH_SHORT).show();
                     break;
+
                 case R.id.button4:
                     //switchFragment(SettingsFragment.TAG);
-                    Toast.makeText( getActivity(),  R.string.button4, Toast.LENGTH_SHORT).show();
+                    //Toast.makeText( getActivity(),  R.string.button4, Toast.LENGTH_SHORT).show();
+
+                    intent = new Intent(getActivity(), SocialMediaActivity.class);
+                    startActivity( intent );
+
                     break;
 
                 case R.id.button5:
                     Log.i("CIT App", "Button 5 has been pressed");
-                    Toast.makeText( getActivity(),  R.string.button5, Toast.LENGTH_SHORT).show();
+                 //   Toast.makeText( getActivity(),  R.string.button5, Toast.LENGTH_SHORT).show();
+
+                    intent = new Intent(getActivity(), VirtualTourActivity.class);
+                    startActivity( intent );
                     break;
                 case R.id.button6:
                     //switchFragment(SettingsFragment.TAG);
