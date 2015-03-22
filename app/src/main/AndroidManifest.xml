@@ -32,6 +32,7 @@
         <activity android:name="project.dnet3.appcit.CITLocationActivity" />
         <activity android:name="project.dnet3.appcit.FloorPlansActivity" />
         <activity android:name="project.dnet3.appcit.TimeTableActivity" />
+        <activity android:name="project.dnet3.appcit.Web4Student" />
 
     </application>
 </manifest>

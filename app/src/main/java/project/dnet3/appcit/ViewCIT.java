@@ -14,6 +14,7 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
     Button button1;
     Button button2;
     Button button3;
+    Button button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,7 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
         Intent intent;
         switch (v.getId()) {
             case R.id.buttViewCITBlackboard:
-                Log.i("CIT App", "Button Blackboard has been pressed");
+             //   Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
                 intent = new Intent(this, BlackboardActivity.class);
@@ -71,7 +72,7 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
                 break;
 
             case R.id.buttViewCITCardTopUp:
-                Log.i("CIT App", "Button Blackboard has been pressed");
+            //    Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
                 intent = new Intent(this, BlackboardActivity.class);
@@ -79,7 +80,7 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
                 break;
 
             case R.id.buttViewCitWebsite:
-                Log.i("CIT App", "Button Blackboard has been pressed");
+             //   Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
                 intent = new Intent(this, WebsiteActivity.class);
