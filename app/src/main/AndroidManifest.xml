@@ -31,6 +31,7 @@
         <activity android:name="project.dnet3.appcit.SocialMediaActivity" />
         <activity android:name="project.dnet3.appcit.CITLocationActivity" />
         <activity android:name="project.dnet3.appcit.FloorPlansActivity" />
+        <activity android:name="project.dnet3.appcit.TimeTableActivity" />
 
     </application>
 </manifest>
