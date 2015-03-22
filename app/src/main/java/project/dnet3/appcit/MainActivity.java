@@ -96,7 +96,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 Log.i("CIT App", "Button timetables has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, TimeTableActivity.class);
+                intent = new Intent(this, TableTableDisplayActivity.class);
                 startActivity( intent );
                 break;
 

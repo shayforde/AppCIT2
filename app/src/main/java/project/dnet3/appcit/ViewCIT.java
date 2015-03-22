@@ -14,7 +14,6 @@ public class ViewCIT extends ActionBarActivity implements View.OnClickListener {
     Button button1;
     Button button2;
     Button button3;
-    Button button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

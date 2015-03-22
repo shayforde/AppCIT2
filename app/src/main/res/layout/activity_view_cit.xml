@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:text="@string/buttViewCitBlackboard"
         android:id="@+id/buttViewCITBlackboard"
-        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_above="@+id/buttViewCITCardTopUp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="138dp"
-        android:layout_gravity="center" />
+        android:layout_marginBottom="77dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -25,14 +25,16 @@
         android:layout_gravity="center"
         android:layout_centerVertical="true"
         android:layout_alignLeft="@+id/buttViewCITBlackboard"
-        android:layout_alignStart="@+id/buttViewCITBlackboard" />
+        android:layout_alignStart="@+id/buttViewCITBlackboard"
+        android:layout_alignRight="@+id/buttViewCITBlackboard"
+        android:layout_alignEnd="@+id/buttViewCITBlackboard" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/buttViewCitWebsite"
         android:id="@+id/buttViewCitWebsite"
-        android:layout_marginTop="45dp"
+        android:layout_marginTop="54dp"
         android:layout_gravity="center"
         android:layout_below="@+id/buttViewCITCardTopUp"
         android:layout_alignLeft="@+id/buttViewCITCardTopUp"

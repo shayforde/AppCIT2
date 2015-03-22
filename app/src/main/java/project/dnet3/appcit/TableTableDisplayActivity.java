@@ -20,9 +20,9 @@ import java.util.ArrayList;
 /**
  * Created by shay on 22/03/2015.
  */
-public class TimeTableActivity extends ActionBarActivity {
+public class TableTableDisplayActivity extends ActionBarActivity {
 
-    private static final String TAG = "TimeTableActivity";
+    private static final String TAG = "TimeTableDisplay";
 
     private static final String FIRST_URL_HALF = "http://timetables.cit.ie:70/reporting/Individual;Programme+Of+Study;name;";
     private static final String SECOND_URL_HALF = "?weeks=&days=1-5&periods=1-40&height=100&width=100";
@@ -75,7 +75,7 @@ public class TimeTableActivity extends ActionBarActivity {
 
 
     public static void Open(Context context){
-        Intent intent = new Intent(context, TimeTableActivity.class);
+        Intent intent = new Intent(context, TableTableDisplayActivity.class);
         context.startActivity(intent);
     }
 
