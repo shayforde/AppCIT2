@@ -17,8 +17,6 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
 
     Button button1;
     Button button2;
-    Button button3;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +41,6 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
         button2 = (Button) findViewById(R.id.handbook_union);
         button2.setOnClickListener(this);
 
-        button3 = (Button) findViewById(R.id.web4student);
-        button3.setOnClickListener(this);
-
-
         return true;
     }
 
@@ -61,7 +55,6 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
         if (id == R.id.action_settings) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -84,17 +77,10 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, Web4Student.class );
+                intent = new Intent(this, SportsHandbookActivity.class );
                 startActivity( intent );
                 break;
 
-            case R.id.web4student:
-                Log.i("CIT App", "Button Blackboard has been pressed");
-                //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
-
-                intent = new Intent(this, Web4Student.class);
-                startActivity( intent );
-                break;
 
 
             default:

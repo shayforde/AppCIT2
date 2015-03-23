@@ -3,6 +3,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+    <string name="server_ip">192.168.1.102</string>
+
     <string name="button1">View myCIT</string>
     <string name="button2">Student Union\nand Services</string>
     <string name="button3">Timetables</string>

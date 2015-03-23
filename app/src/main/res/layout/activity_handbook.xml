@@ -13,32 +13,19 @@
         android:text="@string/handbook_student"
         android:id="@+id/handbook_student"
         android:layout_gravity="center"
-        android:layout_marginBottom="52dp"
-        android:layout_above="@+id/web4student"
+        android:layout_alignBaseline="@+id/handbook_union"
+        android:layout_alignBottom="@+id/handbook_union"
         android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/handbook_web4student"
-        android:id="@+id/web4student"
-        android:layout_gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_alignLeft="@+id/handbook_student"
-        android:layout_alignStart="@+id/handbook_student" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/handbook_union"
         android:id="@+id/handbook_union"
-        android:layout_marginBottom="124dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/web4student"
-        android:layout_alignStart="@+id/web4student"
         android:layout_gravity="center"
-        android:layout_alignRight="@+id/web4student"
-        android:layout_alignEnd="@+id/web4student" />
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/handbook_student"
+        android:layout_alignStart="@+id/handbook_student" />
 
 
 </RelativeLayout>
