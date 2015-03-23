@@ -120,8 +120,8 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
-//                intent = new Intent(this, Find.class);
-//                startActivity( intent );
+                intent = new Intent(this, FindLocationActivity.class);
+                startActivity( intent );
                 break;
 
 

@@ -24,7 +24,7 @@
         <activity android:name="project.dnet3.appcit.HandbooksActivity" />
         <activity android:name="project.dnet3.appcit.StudentHandbookActivity" />
         <activity android:name="project.dnet3.appcit.SportsHandbookActivity" />
-        <activity android:name="project.dnet3.appcit.LocationActivity" />
+        <activity android:name=".FindLocationActivity" />
         <activity android:name="project.dnet3.appcit.VirtualTourActivity" />
         <activity android:name="project.dnet3.appcit.FacebookActivity" />
         <activity android:name="project.dnet3.appcit.TwitterActivity" />

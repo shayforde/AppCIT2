@@ -84,7 +84,7 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, SportsHandbookActivity.class );
+                intent = new Intent(this, Web4Student.class );
                 startActivity( intent );
                 break;
 

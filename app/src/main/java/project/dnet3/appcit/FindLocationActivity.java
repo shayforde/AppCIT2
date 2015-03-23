@@ -16,7 +16,7 @@ import android.widget.Toast;
 /**
  * Created by shay on 20/03/2015.
  */
-public class LocationActivity extends ActionBarActivity implements View.OnClickListener {
+public class FindLocationActivity extends ActionBarActivity implements View.OnClickListener {
         Button button1;
         Button button2;
 

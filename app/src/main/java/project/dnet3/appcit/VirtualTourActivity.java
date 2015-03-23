@@ -32,7 +32,8 @@ public class VirtualTourActivity extends ActionBarActivity {
         //   mWebview.loadUrl("http://mapsengine.google.com/map/embed?mid=zQH00h_hX520.k4SoJnz7xdy8");
 
         //mWebview.loadUrl("http://static.dermandar.com/php/getimage.php?epid=bcXRZv&equi=1&h=512&r=1");
-        mWebview.loadUrl("file:///android_asset/virtual_tour.html");
+       // mWebview.loadUrl("file:///android_asset/virtual_tour.html");
+        mWebview.loadUrl("192.168.1.102/joomla/index.php/virtual-tour");
         setContentView(mWebview );
 
 /*

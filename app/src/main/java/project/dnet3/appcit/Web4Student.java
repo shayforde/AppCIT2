@@ -27,8 +27,8 @@ public class Web4Student  extends ActionBarActivity {
 
         connectWebView();
 
-       // mWebview.loadUrl("http://www.mycit.ie/web4");
-        mWebview.loadUrl("https://ssb.ancheim.ie/cit/app/twbkwbis.P_WWWLogin");
+      //  mWebview.loadUrl("http://www.mycit.ie/web4");
+        mWebview.loadUrl("192.168.1.102/joomla/index.php/handbooks");
         setContentView(mWebview );
 
     }

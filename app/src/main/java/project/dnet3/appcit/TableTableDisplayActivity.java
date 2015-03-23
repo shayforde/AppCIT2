@@ -25,7 +25,7 @@ public class TableTableDisplayActivity extends ActionBarActivity {
     private static final String TAG = "TimeTableDisplay";
 
     private static final String FIRST_URL_HALF = "http://timetables.cit.ie:70/reporting/Individual;Programme+Of+Study;name;";
-    private static final String SECOND_URL_HALF = "?weeks=&days=1-5&periods=1-40&height=100&width=100";
+    private static final String SECOND_URL_HALF = "?weeks=&days=1-5&periods=1-40&height=75&width=75";
 
     private WebView act_timetable_webview;
 
