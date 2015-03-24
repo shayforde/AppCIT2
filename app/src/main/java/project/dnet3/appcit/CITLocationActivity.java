@@ -40,7 +40,6 @@ public class CITLocationActivity extends ActionBarActivity {
                 Toast.makeText(activity, description, Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
     @Override
