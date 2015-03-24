@@ -24,10 +24,17 @@ public class TableTableDisplayActivity extends ActionBarActivity {
 
     private static final String TAG = "TimeTableDisplay";
 
-    private static final String FIRST_URL_HALF = "http://timetables.cit.ie:70/reporting/Individual;Programme+Of+Study;name;";
+//    private static final String FIRST_URL_HALF = "http://timetables.cit.ie:70/reporting/Individual;Programme+Of+Study;name;";
+//    private static final String SECOND_URL_HALF = "?weeks=&days=1-5&periods=1-40&height=75&width=75";
+
+    // http://timetables.cit.ie:70/reporting/Individual;Student+Set;name;CO.DNET3%0D%0A?weeks=&days=1-5&periods=1-40&height=100&width=100
+    private static final String FIRST_URL_HALF = "http://timetables.cit.ie:70/reporting/Individual;Programme+Of+Study;";
     private static final String SECOND_URL_HALF = "?weeks=&days=1-5&periods=1-40&height=75&width=75";
 
     private WebView act_timetable_webview;
+
+    private Spinner spinner;
+    private String department;
 
 
     @Override
@@ -40,6 +47,26 @@ public class TableTableDisplayActivity extends ActionBarActivity {
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setBuiltInZoomControls(true);
         act_timetable_webview.setWebViewClient(new WebViewClient());
+
+        spinner = (Spinner) findViewById(R.id.spinner2);
+
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+
+            @Override
+            public void onItemSelected(AdapterView<?> adapter, View arg1, int position, long arg3) {
+                department = (String) adapter.getAdapter().getItem(position);
+                if(!department.equals("Select")){
+                    department = department.replace(" ", "+");
+                    Log.d(TAG, "url : " + FIRST_URL_HALF + department + SECOND_URL_HALF);
+            //        act_timetable_webview.loadUrl(FIRST_URL_HALF + name + SECOND_URL_HALF);
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> arg0) {
+            }
+        });
+
     }
 
     @Override

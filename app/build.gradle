@@ -25,5 +25,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.joanzapata.pdfview:android-pdfview:1.0.+@aar'
     compile 'com.loopj.android:android-async-http:1.4.6'
+    compile project(':Android-RSS')
     compile 'com.google.code.gson:gson:2.3@jar'
 }

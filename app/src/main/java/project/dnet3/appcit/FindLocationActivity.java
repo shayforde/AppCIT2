@@ -9,6 +9,7 @@ import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
 import java.lang.reflect.Type;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -28,6 +29,9 @@ responseToRoomListTest(  );
       //  ArrayAdapter<String> timeTableAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, android.R.id.text1, itemList);
       //  spinner.setAdapter(timeTableAdapter);
 
+        ArrayList<String> itemList;
+
+
 
     }
 
@@ -36,7 +40,7 @@ responseToRoomListTest(  );
         Type type = new TypeToken<List<RoomShortData>>() {}.getType();
         List<RoomShortData> listOfRooms = new Gson().fromJson(sampleResponse, type);
         for(RoomShortData room : listOfRooms){
-            Log.e("responseToObjectTest", "room number : " + room.getRoomNumber());
+            Log.i("responseToObjectTest", "room number : " + room.getRoomNumber());
         }
     }
 

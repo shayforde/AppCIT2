@@ -30,4 +30,50 @@
 
     <string name="butt_cit_location">CIT Location</string>
     <string name="butt_floor_plans">Room Location</string>
+
+    <string-array name="class_groups_arrays">
+        <item>No Filter</item>
+        <item>ACCOUNTING</item>
+        <item>ADMIN</item>
+        <item>ARCHITECTURE</item>
+        <item>ARTSOFFICE</item>
+        <item>BIOLOGY</item>
+        <item>CCAD</item>
+        <item>CHEMISTRY</item>
+        <item>CIVIL</item>
+        <item>COMPUTING</item>
+        <item>CONSTRUCTION</item>
+        <item>CRAFTSTUDIES</item>
+        <item>CSM</item>
+        <item>CSMACADEMIC</item>
+        <item>CSMKEYBOARD</item>
+        <item>CSMSTRINGS</item>
+        <item>CSMWIND</item>
+        <item>DEIS</item>
+        <item>ELECTRICAL</item>
+        <item>MANAGEMENT</item>
+        <item>MARKETING</item>
+        <item>MATHS</item>
+        <item>MECHANICAL</item>
+        <item>MEDIA</item>
+        <item>NMCI</item>
+        <item>ONLINE</item>
+        <item>ORGANISATION</item>
+        <item>PHYSICAL SCIENCES</item>
+        <item>PROCESS</item>
+        <item>SOCIAL</item>
+        <item>SPORT</item>
+        <item>TOURISM</item>
+    </string-array>
+
+    <string-array name="days_array">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
 </resources>

@@ -8,6 +8,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
+
 
 /**
  * Created by shay on 21/03/2015.
@@ -20,11 +22,18 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     Button button5;
     Button button6;
 
+    private ListView act_rss_list;
+//    private RssAdapter rssAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_main2);
 
+   /*     act_rss_list = (ListView) findViewById(R.id.act_rss_list);
+        setTitle("MyCit RSS");
+        new RetrieveFeedTask().execute("");
+*/
         Log.i("CIT App", "MainActivity constructor called");
     }
 
