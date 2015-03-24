@@ -3,16 +3,18 @@ package project.dnet3.appcit;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 /**
- * Created by shay on 21/03/2015.
+ * Created by shay on 24/03/2015.
  */
-public class CITLocationActivity extends ActionBarActivity {
+public class LinkMedicalCentre extends ActionBarActivity {
 
     WebView mWebview;
 
@@ -24,8 +26,37 @@ public class CITLocationActivity extends ActionBarActivity {
         // final Activity activity = this;
         connectWebView();
 
-        mWebview.loadUrl("http://" + getString(R.string.server_ip) + "/joomla/index.php/location");
+        // mWebview.loadUrl("https://dl.dropboxusercontent.com/u/79441161/startup/DBstartpage.html");
+        //mWebview.loadUrl("http://www.mycit.ie/");
+
+        //   mWebview.loadUrl("http://192.168.1.102/joomla/index.php/location");
+        //   mWebview.loadUrl("http://mapsengine.google.com/map/embed?mid=zQH00h_hX520.k4SoJnz7xdy8");
+
+        WebSettings webSettings = mWebview.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
+        webSettings.setBuiltInZoomControls(true);
+        mWebview.setWebViewClient(new WebViewClient());
+        webSettings.setBuiltInZoomControls(true);
+        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/su-and-services/104-medical-centre");
         setContentView(mWebview );
+
+/*
+        // Get the message from the intent
+        Intent intent = getIntent();
+       // String message = intent.getStringExtra(MyActivity.EXTRA_MESSAGE);
+
+        // Create the text view
+        TextView textView = new TextView(this);
+        textView.setTextSize(40);
+        textView.setText("hello world again");
+
+        // Set the text view as the activity layout
+        setContentView(textView);
+*/
+
+
+        Log.i("CIT App", "ViewCIT constructor called");
     }
 
     void connectWebView(){
@@ -42,6 +73,7 @@ public class CITLocationActivity extends ActionBarActivity {
         });
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -61,6 +93,7 @@ public class CITLocationActivity extends ActionBarActivity {
         if (id == R.id.action_settings) {
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
 }

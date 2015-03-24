@@ -132,7 +132,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             case R.id.butt_virtual_tour:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
-
                 intent = new Intent(this, VirtualTourActivity.class);
                 startActivity( intent );
                 break;
@@ -140,7 +139,6 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
             case R.id.butt_rss_feed:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
-
                 intent = new Intent(this, RssActivity.class);
                 startActivity( intent );
                 break;

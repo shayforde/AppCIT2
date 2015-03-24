@@ -35,6 +35,8 @@
         <activity android:name="project.dnet3.appcit.Web4Student" />
         <activity android:name="project.dnet3.appcit.ViewHandbooks" />
         <activity android:name="project.dnet3.appcit.RssActivity" />
+        <activity android:name="project.dnet3.appcit.LinkMedicalCentre" />
+        <activity android:name="project.dnet3.appcit.LinkCareerCounselling" />
 
     </application>
 </manifest>

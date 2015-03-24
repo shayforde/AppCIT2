@@ -5,19 +5,20 @@
 
     <string name="server_ip">192.168.1.102</string>
 
-    <string name="butt_view_handbooks">View Handbooks</string>
+
     <string name="butt_view_cit">myCIT Portal</string>
     <string name="butt_stu_union_and_serve">Student Union\nand Services</string>
     <string name="butt_timetables">Timetables</string>
     <string name="butt_social_media">Social Media</string>
     <string name="butt_virtual_tour">Virtual Tour</string>
     <string name="butt_find_location">Find Location</string>
+
     <string name="butt_medical_center">Medical Centre</string>
-    <string name="butt_counselling">Counselling</string>
+    <string name="butt_career_counsil">Careers and Counselling</string>
     <string name="butt_disability_services">Disability Services</string>
     <string name="butt_mature_students">Mature Students</string>
-    <string name="butt_careers">Careers</string>
     <string name="butt_main_sites">Main Sites</string>
+    <string name="butt_view_handbooks">Handbooks</string>
 
 
 

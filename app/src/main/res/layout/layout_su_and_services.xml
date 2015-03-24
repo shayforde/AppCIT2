@@ -10,11 +10,68 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/butt_medical_center"
+        android:id="@+id/butt_medical_centre"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="45dp"
+        android:layout_alignLeft="@+id/butt_careers"
+        android:layout_alignStart="@+id/butt_careers"
+        android:layout_alignRight="@+id/butt_disability_services"
+        android:layout_alignEnd="@+id/butt_disability_services" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/butt_disability_services"
+        android:id="@+id/butt_disability_services"
+        android:layout_below="@+id/butt_medical_centre"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/butt_mature_students"
+        android:id="@+id/butt_mature_students"
+        android:layout_below="@+id/butt_disability_services"
+        android:layout_alignRight="@+id/butt_disability_services"
+        android:layout_alignEnd="@+id/butt_disability_services"
+        android:layout_alignLeft="@+id/butt_disability_services"
+        android:layout_alignStart="@+id/butt_disability_services" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/butt_career_counsil"
+        android:id="@+id/butt_careers"
+        android:layout_below="@+id/butt_mature_students"
+        android:layout_alignLeft="@+id/butt_mature_students"
+        android:layout_alignStart="@+id/butt_mature_students"
+        android:layout_alignRight="@+id/butt_mature_students"
+        android:layout_alignEnd="@+id/butt_mature_students" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/butt_main_sites"
+        android:id="@+id/butt_main_sites"
+        android:layout_below="@+id/butt_careers"
+        android:layout_alignRight="@+id/butt_careers"
+        android:layout_alignEnd="@+id/butt_careers"
+        android:layout_alignLeft="@+id/butt_careers"
+        android:layout_alignStart="@+id/butt_careers" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="@string/butt_view_handbooks"
         android:id="@+id/butt_view_handbooks"
-        android:layout_gravity="center"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/butt_main_sites"
+        android:layout_alignLeft="@+id/butt_main_sites"
+        android:layout_alignStart="@+id/butt_main_sites"
+        android:layout_alignRight="@+id/butt_main_sites"
+        android:layout_alignEnd="@+id/butt_main_sites" />
 
 
 </RelativeLayout>
