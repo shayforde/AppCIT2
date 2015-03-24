@@ -24,7 +24,7 @@ public class CITLocationActivity extends ActionBarActivity {
         // final Activity activity = this;
         connectWebView();
 
-        mWebview.loadUrl("http://" + getString(R.string.server_ip) + "/joomla/index.php/location");
+        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/location");
         setContentView(mWebview );
     }
 

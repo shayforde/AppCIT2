@@ -3,6 +3,7 @@ package project.dnet3.appcit;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
+import android.widget.Button;
 import android.widget.Spinner;
 
 import com.google.gson.Gson;
@@ -16,6 +17,7 @@ import java.util.List;
  * Created by shay on 20/03/2015.
  */
 public class FindLocationActivity extends ActionBarActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

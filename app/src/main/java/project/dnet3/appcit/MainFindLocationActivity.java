@@ -1,5 +1,6 @@
 package project.dnet3.appcit;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
@@ -9,22 +10,19 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by shay on 23/03/2015.
+ * Created by shay on 24/03/2015.
  */
-public class RoomLocationActivity extends ActionBarActivity implements View.OnClickListener {
-
-
-//    Button button1;
-//    Button button2;
+public class MainFindLocationActivity extends ActionBarActivity implements View.OnClickListener {
+    Button button1;
+    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_su_and_services);
+        setContentView(R.layout.layout_main_find_location);
 
         Log.i("CIT App", "ViewCIT constructor called");
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -33,8 +31,12 @@ public class RoomLocationActivity extends ActionBarActivity implements View.OnCl
 
         //View v = inflater.inflate(R.layout.activity_main, container, false);
 
-//        button1 = (Button) findViewById(R.id.butt_handbooks);
-//        button1.setOnClickListener(this);
+        button1 = (Button) findViewById(R.id.butt_cit_location);
+        button1.setOnClickListener(this);
+
+//        button2 = (Button) findViewById(R.id.butt_);
+//        button2.setOnClickListener(this);
+
 
         return true;
     }
@@ -50,27 +52,32 @@ public class RoomLocationActivity extends ActionBarActivity implements View.OnCl
         if (id == R.id.action_settings) {
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
-
-
 
     @Override
     public void onClick(View v) {
         //do what you want to do when button is clicked
-  /*      Intent intent;
+        Intent intent;
         switch (v.getId()) {
-            case R.id.butt_handbooks:
-                Log.i("CIT App", "Button Blackboard has been pressed");
+            case R.id.butt_cit_location:
+                Log.i("CIT App", "Button facebook has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, StudentHandbookActivity.class);
-                startActivity( intent );
+                intent = new Intent(this, CITLocationActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.butt_room_location:
+                Log.i("CIT App", "Button Blackboard has been pressed");
+                //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
+
+                intent = new Intent(this, SportsHandbookActivity.class);
+                startActivity(intent);
                 break;
 
             default:
         }
-    */
     }
-
 }

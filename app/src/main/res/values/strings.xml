@@ -5,7 +5,6 @@
 
     <string name="server_ip">192.168.1.102</string>
 
-
     <string name="butt_view_cit">myCIT Portal</string>
     <string name="butt_stu_union_and_serve">Student Union\nand Services</string>
     <string name="butt_timetables">Timetables</string>
@@ -20,18 +19,6 @@
     <string name="butt_main_sites">Main Sites</string>
     <string name="butt_view_handbooks">Handbooks</string>
 
-
-
-<!--
-    <string name="buttViewCitBlackboard">Blackboard</string>
-    <string name="buttViewCi CenttCardTopUp">Card Top Up</string>
-    <string name="buttViewCitWebsite">View CIT\nWebsite</string>
-
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_view_cit">ViewCIT</string>
--->
-
-
     <string name="butt_handbook_student">View Student Handbook</string>
     <string name="butt_handbook_union">View Union Handbook</string>
 
@@ -40,7 +27,7 @@
     <string name="butt_twitter">Twitter</string>
 
     <string name="butt_cit_location">CIT Location</string>
-    <string name="butt_floor_plans">Room Location</string>
+    <string name="butt_room_location">Room Location</string>
 
     <string name="butt_rss_feed">CIT Newsfeed RSS</string>
 

@@ -37,6 +37,7 @@
         <activity android:name="project.dnet3.appcit.RssActivity" />
         <activity android:name="project.dnet3.appcit.LinkMedicalCentre" />
         <activity android:name="project.dnet3.appcit.LinkCareerCounselling" />
+        <activity android:name="project.dnet3.appcit.MainFindLocationActivity" />
 
     </application>
 </manifest>
