@@ -13,8 +13,8 @@
         android:text="@string/butt_view_handbooks"
         android:id="@+id/butt_view_handbooks"
         android:layout_gravity="center"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
-
 
 
 </RelativeLayout>

@@ -21,19 +21,20 @@
         <activity android:name="project.dnet3.appcit.BlackboardActivity"/>
         <activity android:name="project.dnet3.appcit.WebsiteActivity" />
         <activity android:name="project.dnet3.appcit.TopUpActivity" />
-        <activity android:name="project.dnet3.appcit.HandbooksActivity" />
+        <activity android:name=".SUandStudentActivity" />
         <activity android:name="project.dnet3.appcit.StudentHandbookActivity" />
         <activity android:name="project.dnet3.appcit.SportsHandbookActivity" />
-        <activity android:name=".FindLocationActivity" />
+        <activity android:name="project.dnet3.appcit.FindLocationActivity" />
         <activity android:name="project.dnet3.appcit.VirtualTourActivity" />
         <activity android:name="project.dnet3.appcit.FacebookActivity" />
         <activity android:name="project.dnet3.appcit.TwitterActivity" />
         <activity android:name="project.dnet3.appcit.SocialMediaActivity" />
         <activity android:name="project.dnet3.appcit.CITLocationActivity" />
         <activity android:name="project.dnet3.appcit.FloorPlansActivity" />
-        <activity android:name=".TableTableDisplayActivity" />
+        <activity android:name="project.dnet3.appcit.TableTableDisplayActivity" />
         <activity android:name="project.dnet3.appcit.Web4Student" />
         <activity android:name="project.dnet3.appcit.ViewHandbooks" />
+        <activity android:name="project.dnet3.appcit.RssActivity" />
 
     </application>
 </manifest>

@@ -12,7 +12,7 @@ import android.widget.Button;
 /**
  * Created by shay on 19/03/2015.
  */
-public class HandbooksActivity extends ActionBarActivity implements View.OnClickListener {
+public class SUandStudentActivity extends ActionBarActivity implements View.OnClickListener {
 
 
     Button button1;

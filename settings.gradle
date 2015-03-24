@@ -1,1 +1,2 @@
-include ':app', ':Android-RSS'
+include ':app'
+include ':Android-RSS'

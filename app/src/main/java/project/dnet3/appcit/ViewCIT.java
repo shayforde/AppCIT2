@@ -35,7 +35,9 @@ public class ViewCIT extends ActionBarActivity  {
         webSettings.setBuiltInZoomControls(true);
         mWebview.setWebViewClient(new WebViewClient());
         webSettings.setBuiltInZoomControls(true);
-        mWebview.loadUrl("http://" + getString(R.string.server_ip) + "/joomla/index.php/view-mycit");
+       // mWebview.loadUrl("http://" + getString(R.string.server_ip) + "/joomla/index.php/mycit-portal");
+        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/mycit-portal");
+        Log.i("myCIT","http://192.168.1.102/joomla/index.php/mycit-portal" );
         setContentView(mWebview );
 
 

@@ -52,5 +52,12 @@
         android:id="@+id/butt_virtual_tour"
         android:layout_gravity="center_horizontal" />
 
+    <Button
+        android:layout_width="192dp"
+        android:layout_height="58dp"
+        android:text="@string/butt_rss_feed"
+        android:id="@+id/butt_rss_feed"
+        android:layout_gravity="center_horizontal" />
+
 </LinearLayout>
     </ScrollView>
