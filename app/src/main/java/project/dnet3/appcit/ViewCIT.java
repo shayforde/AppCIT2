@@ -1,10 +1,5 @@
 package project.dnet3.appcit;
 
-import android.support.v7.app.ActionBarActivity;
-
-// 192.168.1.102/joomla/index.php/view-mycit
-
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -15,6 +10,8 @@ import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
+
+// 192.168.1.102/joomla/index.php/view-mycit
 
 /**
  * Created by shay on 19/03/2015.
@@ -38,7 +35,7 @@ public class ViewCIT extends ActionBarActivity  {
         webSettings.setBuiltInZoomControls(true);
         mWebview.setWebViewClient(new WebViewClient());
         webSettings.setBuiltInZoomControls(true);
-        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/view-mycit");
+        mWebview.loadUrl("http://" + getString(R.string.server_ip) + "/joomla/index.php/view-mycit");
         setContentView(mWebview );
 
 

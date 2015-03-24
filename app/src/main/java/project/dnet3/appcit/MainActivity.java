@@ -35,22 +35,22 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
 
         //View v = inflater.inflate(R.layout.activity_main, container, false);
 
-        button1 = (Button) findViewById(R.id.button1);
+        button1 = (Button) findViewById(R.id.butt_view_cit);
         button1.setOnClickListener(this);
 
-        button2 = (Button) findViewById(R.id.button2);
+        button2 = (Button) findViewById(R.id.butt_stu_union_and_serve);
         button2.setOnClickListener(this);
 
-        button3 = (Button) findViewById(R.id.button3);
+        button3 = (Button) findViewById(R.id.butt_timetables);
         button3.setOnClickListener(this);
 
-        button4 = (Button) findViewById(R.id.button4);
+        button4 = (Button) findViewById(R.id.butt_social_media);
         button4.setOnClickListener(this);
 
-        button5 = (Button) findViewById(R.id.button5);
+        button5 = (Button) findViewById(R.id.butt_find_location);
         button5.setOnClickListener(this);
 
-        button6 = (Button) findViewById(R.id.button6);
+        button6 = (Button) findViewById(R.id.butt_virtual_tour);
         button6.setOnClickListener(this);
 
         return true;
@@ -76,7 +76,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         //do what you want to do when button is clicked
         Intent intent;
         switch (v.getId()) {
-            case R.id.button1:
+            case R.id.butt_view_cit:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
@@ -84,7 +84,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 startActivity( intent );
                 break;
 
-            case R.id.button2:
+            case R.id.butt_stu_union_and_serve:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
@@ -92,7 +92,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 startActivity( intent );
                 break;
 
-            case R.id.button3:
+            case R.id.butt_timetables:
                 Log.i("CIT App", "Button timetables has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
@@ -100,7 +100,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 startActivity( intent );
                 break;
 
-            case R.id.button4:
+            case R.id.butt_social_media:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
@@ -108,15 +108,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 startActivity( intent );
                 break;
 
-            case R.id.button5:
-                Log.i("CIT App", "Button Blackboard has been pressed");
-                //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
-
-                intent = new Intent(this, VirtualTourActivity.class);
-                startActivity( intent );
-                break;
-
-            case R.id.button6:
+            case R.id.butt_find_location:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
@@ -124,7 +116,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 startActivity( intent );
                 break;
 
+            case R.id.butt_virtual_tour:
+                Log.i("CIT App", "Button Blackboard has been pressed");
+                //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
+                intent = new Intent(this, VirtualTourActivity.class);
+                startActivity( intent );
+                break;
             default:
         }
     }

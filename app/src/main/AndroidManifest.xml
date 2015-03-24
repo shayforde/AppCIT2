@@ -33,6 +33,7 @@
         <activity android:name="project.dnet3.appcit.FloorPlansActivity" />
         <activity android:name=".TableTableDisplayActivity" />
         <activity android:name="project.dnet3.appcit.Web4Student" />
+        <activity android:name="project.dnet3.appcit.ViewHandbooks" />
 
     </application>
 </manifest>

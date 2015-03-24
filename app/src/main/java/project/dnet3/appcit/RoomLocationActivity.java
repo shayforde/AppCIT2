@@ -1,28 +1,25 @@
 package project.dnet3.appcit;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 
 /**
- * Created by shay on 19/03/2015.
+ * Created by shay on 23/03/2015.
  */
-public class HandbooksActivity extends ActionBarActivity implements View.OnClickListener {
+public class RoomLocationActivity extends ActionBarActivity implements View.OnClickListener {
 
 
-    Button button1;
+//    Button button1;
 //    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.layout_su_and_services);
-
 
         Log.i("CIT App", "ViewCIT constructor called");
     }
@@ -35,8 +32,8 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
 
         //View v = inflater.inflate(R.layout.activity_main, container, false);
 
-        button1 = (Button) findViewById(R.id.butt_view_handbooks);
-        button1.setOnClickListener(this);
+//        button1 = (Button) findViewById(R.id.butt_handbooks);
+//        button1.setOnClickListener(this);
 
         return true;
     }
@@ -60,17 +57,19 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
     @Override
     public void onClick(View v) {
         //do what you want to do when button is clicked
-        Intent intent;
+  /*      Intent intent;
         switch (v.getId()) {
-            case R.id.butt_view_handbooks:
+            case R.id.butt_handbooks:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, ViewHandbooks.class);
+                intent = new Intent(this, StudentHandbookActivity.class);
                 startActivity( intent );
                 break;
 
             default:
         }
+    */
     }
+
 }

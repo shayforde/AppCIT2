@@ -3,7 +3,6 @@ package project.dnet3.appcit;
 import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
@@ -25,10 +24,8 @@ public class CITLocationActivity extends ActionBarActivity {
         // final Activity activity = this;
         connectWebView();
 
-        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/location");
+        mWebview.loadUrl(getString(R.string.server_ip) + "/joomla/index.php/location");
         setContentView(mWebview );
-
-    //    Log.i("CIT App", "ViewCIT constructor called");
     }
 
     void connectWebView(){
@@ -45,7 +42,6 @@ public class CITLocationActivity extends ActionBarActivity {
         });
 
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

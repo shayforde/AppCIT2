@@ -5,23 +5,24 @@
 
     <string name="server_ip">192.168.1.102</string>
 
-    <string name="button1">View myCIT</string>
-    <string name="button2">Student Union\nand Services</string>
-    <string name="button3">Timetables</string>
-    <string name="button4">Social Media</string>
-    <string name="button5">Virtual Tour</string>
-    <string name="button6">Find Location</string>
-
+    <string name="butt_view_cit">View myCIT</string>
+    <string name="butt_stu_union_and_serve">Student Union\nand Services</string>
+    <string name="butt_timetables">Timetables</string>
+    <string name="butt_social_media">Social Media</string>
+    <string name="butt_virtual_tour">Virtual Tour</string>
+    <string name="butt_find_location">Find Location</string>
+<!--
     <string name="buttViewCitBlackboard">Blackboard</string>
     <string name="buttViewCitCardTopUp">Card Top Up</string>
     <string name="buttViewCitWebsite">View CIT\nWebsite</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_view_cit">ViewCIT</string>
+-->
+    <string name="butt_view_handbooks">View Handbooks</string>
 
-    <string name="handbook_student">View Student\nHandbook</string>
-    <string name="handbook_union">View Sports\nHandbook</string>
-    <string name="handbook_web4student">Web4Student</string>
+    <string name="butt_handbook_student">View Student Handbook</string>
+    <string name="butt_handbook_union">View Union Handbook</string>
 
 
     <string name="butt_facebook">Facebook</string>

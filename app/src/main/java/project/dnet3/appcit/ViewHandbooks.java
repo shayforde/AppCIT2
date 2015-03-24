@@ -10,23 +10,19 @@ import android.view.View;
 import android.widget.Button;
 
 /**
- * Created by shay on 19/03/2015.
+ * Created by shay on 24/03/2015.
  */
-public class HandbooksActivity extends ActionBarActivity implements View.OnClickListener {
-
-
+public class ViewHandbooks extends ActionBarActivity implements View.OnClickListener {
     Button button1;
-//    Button button2;
+    Button button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.layout_su_and_services);
-
+        setContentView(R.layout.layout_view_handbooks);
 
         Log.i("CIT App", "ViewCIT constructor called");
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -35,8 +31,12 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
 
         //View v = inflater.inflate(R.layout.activity_main, container, false);
 
-        button1 = (Button) findViewById(R.id.butt_view_handbooks);
+        button1 = (Button) findViewById(R.id.butt_handbook_student);
         button1.setOnClickListener(this);
+
+        button2 = (Button) findViewById(R.id.butt_handbook_union);
+        button2.setOnClickListener(this);
+
 
         return true;
     }
@@ -52,24 +52,30 @@ public class HandbooksActivity extends ActionBarActivity implements View.OnClick
         if (id == R.id.action_settings) {
             return true;
         }
+
         return super.onOptionsItemSelected(item);
     }
-
-
 
     @Override
     public void onClick(View v) {
         //do what you want to do when button is clicked
         Intent intent;
         switch (v.getId()) {
-            case R.id.butt_view_handbooks:
-                Log.i("CIT App", "Button Blackboard has been pressed");
+            case R.id.butt_handbook_student:
+                Log.i("CIT App", "Button facebook has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, ViewHandbooks.class);
-                startActivity( intent );
+                intent = new Intent(this, StudentHandbookActivity.class);
+                startActivity(intent);
                 break;
 
+            case R.id.butt_handbook_union:
+                Log.i("CIT App", "Button Blackboard has been pressed");
+                //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
+
+                intent = new Intent(this, SportsHandbookActivity.class);
+                startActivity(intent);
+                break;
             default:
         }
     }
