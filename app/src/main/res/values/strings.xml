@@ -29,7 +29,11 @@
     <string name="butt_cit_location">CIT Location</string>
     <string name="butt_room_location">Room Location</string>
 
+    <string name="butt_locate_room">Locate Room</string>
+
     <string name="butt_rss_feed">CIT Newsfeed RSS</string>
+
+    <string name="select_room_spinner">Room to Locate</string>
 
     <string-array name="class_groups_arrays">
         <item>No Filter</item>

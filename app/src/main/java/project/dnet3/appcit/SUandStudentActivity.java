@@ -21,8 +21,6 @@ public class SUandStudentActivity extends ActionBarActivity implements View.OnCl
     Button button4;
     Button button5;
     Button button6;
-    Button button7;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +30,6 @@ public class SUandStudentActivity extends ActionBarActivity implements View.OnCl
 
         Log.i("CIT App", "ViewCIT constructor called");
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -45,23 +42,20 @@ public class SUandStudentActivity extends ActionBarActivity implements View.OnCl
         button1 = (Button) findViewById(R.id.butt_medical_centre);
         button1.setOnClickListener(this);
 
-        button2 = (Button) findViewById(R.id.butt_careers);
+        button2 = (Button) findViewById(R.id.butt_disability_services);
         button2.setOnClickListener(this);
 
-        button3 = (Button) findViewById(R.id.butt_view_handbooks);
+        button3 = (Button) findViewById(R.id.butt_mature_students);
         button3.setOnClickListener(this);
 
-        button4 = (Button) findViewById(R.id.butt_view_handbooks);
+        button4 = (Button) findViewById(R.id.butt_careers);
         button4.setOnClickListener(this);
 
-        button5 = (Button) findViewById(R.id.butt_view_handbooks);
+        button5 = (Button) findViewById(R.id.butt_main_sites);
         button5.setOnClickListener(this);
 
         button6 = (Button) findViewById(R.id.butt_view_handbooks);
         button6.setOnClickListener(this);
-
-        button7 = (Button) findViewById(R.id.butt_view_handbooks);
-        button7.setOnClickListener(this);
 
         return true;
     }
@@ -79,8 +73,6 @@ public class SUandStudentActivity extends ActionBarActivity implements View.OnCl
         }
         return super.onOptionsItemSelected(item);
     }
-
-
 
     @Override
     public void onClick(View v) {
@@ -108,16 +100,23 @@ public class SUandStudentActivity extends ActionBarActivity implements View.OnCl
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, ViewHandbooks.class);
+                intent = new Intent(this, LinkDisability.class);
                 startActivity( intent );
                 break;
-
 
             case R.id.butt_mature_students:
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, ViewHandbooks.class);
+                intent = new Intent(this, LinkMatureStudents.class);
+                startActivity( intent );
+                break;
+
+            case R.id.butt_main_sites:
+                Log.i("CIT App", "Button Blackboard has been pressed");
+                //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
+
+                intent = new Intent(this, LinkMainSites.class);
                 startActivity( intent );
                 break;
 
@@ -125,7 +124,7 @@ public class SUandStudentActivity extends ActionBarActivity implements View.OnCl
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, ViewHandbooks.class);
+                intent = new Intent(this, LinkHandbooks.class);
                 startActivity( intent );
                 break;
 

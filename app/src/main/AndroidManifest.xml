@@ -21,8 +21,8 @@
         <activity android:name="project.dnet3.appcit.BlackboardActivity"/>
         <activity android:name="project.dnet3.appcit.WebsiteActivity" />
         <activity android:name="project.dnet3.appcit.TopUpActivity" />
-        <activity android:name=".SUandStudentActivity" />
-        <activity android:name="project.dnet3.appcit.StudentHandbookActivity" />
+        <activity android:name="project.dnet3.appcit.SUandStudentActivity" />
+        <activity android:name=".LinkHandbooks" />
         <activity android:name="project.dnet3.appcit.SportsHandbookActivity" />
         <activity android:name="project.dnet3.appcit.FindLocationActivity" />
         <activity android:name="project.dnet3.appcit.VirtualTourActivity" />
@@ -37,7 +37,11 @@
         <activity android:name="project.dnet3.appcit.RssActivity" />
         <activity android:name="project.dnet3.appcit.LinkMedicalCentre" />
         <activity android:name="project.dnet3.appcit.LinkCareerCounselling" />
+        <activity android:name="project.dnet3.appcit.LinkDisability" />
+        <activity android:name="project.dnet3.appcit.LinkMatureStudents" />
+        <activity android:name="project.dnet3.appcit.LinkMainSites" />
         <activity android:name="project.dnet3.appcit.MainFindLocationActivity" />
+        <activity android:name="project.dnet3.appcit.RoomLocationActivity" />
 
     </application>
 </manifest>

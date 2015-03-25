@@ -6,14 +6,15 @@ import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
 /**
- * Created by shay on 20/03/2015.
+ * Created by shay on 24/03/2015.
  */
-public class VirtualTourActivity extends ActionBarActivity {
+public class LinkMainSites extends ActionBarActivity {
 
     WebView mWebview;
 
@@ -22,11 +23,10 @@ public class VirtualTourActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
 
-        // final Activity activity = this;
         connectWebView();
 
-       mWebview.loadUrl("http://192.168.1.102/joomla/index.php/virtual-tour/");
-        Log.i("CIT App", "http://" + getString(R.string.server_ip) + "/joomla/index.php/virtual-tour");
+        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/109-main-sites");
+    //    Log.i("CIT App", "http://" + getString(R.string.server_ip) + "/joomla/index.php/virtual-tour");
 
         setContentView(mWebview);
 

@@ -1,19 +1,26 @@
 package project.dnet3.appcit;
 
+/**
+ * Created by shay on 18/03/2015.
+ */
+
 import android.app.Activity;
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Toast;
 
-/**
- * Created by shay on 20/03/2015.
- */
-public class VirtualTourActivity extends ActionBarActivity {
+import com.joanzapata.pdfview.PDFView;
+import com.joanzapata.pdfview.listener.OnPageChangeListener;
+
+//import app.mycit.com.mycit.R;
+
+public class LinkHandbooks extends ActionBarActivity {
 
     WebView mWebview;
 
@@ -22,11 +29,10 @@ public class VirtualTourActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_webview);
 
-        // final Activity activity = this;
         connectWebView();
 
-       mWebview.loadUrl("http://192.168.1.102/joomla/index.php/virtual-tour/");
-        Log.i("CIT App", "http://" + getString(R.string.server_ip) + "/joomla/index.php/virtual-tour");
+        mWebview.loadUrl("http://192.168.1.102/joomla/index.php/su-and-services/73-student-handbooks");
+        //    Log.i("CIT App", "http://" + getString(R.string.server_ip) + "/joomla/index.php/virtual-tour");
 
         setContentView(mWebview);
 

@@ -34,9 +34,8 @@ public class MainFindLocationActivity extends ActionBarActivity implements View.
         button1 = (Button) findViewById(R.id.butt_cit_location);
         button1.setOnClickListener(this);
 
-//        button2 = (Button) findViewById(R.id.butt_);
-//        button2.setOnClickListener(this);
-
+        button2 = (Button) findViewById(R.id.butt_room_location);
+        button2.setOnClickListener(this);
 
         return true;
     }
@@ -70,10 +69,10 @@ public class MainFindLocationActivity extends ActionBarActivity implements View.
                 break;
 
             case R.id.butt_room_location:
-                Log.i("CIT App", "Button Blackboard has been pressed");
+                Log.i("CIT App", "Button find location has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
 
-                intent = new Intent(this, SportsHandbookActivity.class);
+                intent = new Intent(this, RoomLocationActivity.class);
                 startActivity(intent);
                 break;
 
