@@ -16,42 +16,42 @@
 
     <Button
         android:layout_width="192dp"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:text="@string/butt_view_cit"
         android:id="@+id/butt_view_cit"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="189dp"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:text="@string/butt_stu_union_and_serve"
         android:id="@+id/butt_stu_union_and_serve"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="195dp"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:text="@string/butt_timetables"
         android:id="@+id/butt_timetables"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="195dp"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:text="@string/butt_social_media"
         android:id="@+id/butt_social_media"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="191dp"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:text="@string/butt_find_location"
         android:id="@+id/butt_find_location"
         android:layout_gravity="center_horizontal" />
 
     <Button
         android:layout_width="196dp"
-        android:layout_height="wrap_content"
+        android:layout_height="58dp"
         android:text="@string/butt_virtual_tour"
         android:id="@+id/butt_virtual_tour"
         android:layout_gravity="center_horizontal" />
@@ -61,6 +61,13 @@
         android:layout_height="58dp"
         android:text="@string/butt_rss_feed"
         android:id="@+id/butt_rss_feed"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        android:layout_width="193dp"
+        android:layout_height="58dp"
+        android:text="@string/butt_about"
+        android:id="@+id/butt_about"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>

@@ -34,6 +34,8 @@
     <string name="butt_rss_feed">CIT Newsfeed RSS</string>
 
     <string name="select_room_spinner">Room to Locate</string>
+    <string name="butt_about">About</string>
+
 
     <string-array name="class_groups_arrays">
         <item>No Filter</item>

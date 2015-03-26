@@ -3,7 +3,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:id="@+id/container2">
 
     <Spinner
         android:layout_width="match_parent"
@@ -12,18 +13,19 @@
         android:id="@+id/spinner"
         android:layout_gravity="center_horizontal" />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/butt_locate_room"
-        android:id="@+id/butt_locate_room"
-        android:layout_gravity="center_horizontal" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:layout_gravity="center_horizontal" />
+        android:id="@+id/imageView1"
+        android:contentDescription="bllll" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:contentDescription="bllll" />
 
 
 </LinearLayout>

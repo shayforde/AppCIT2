@@ -22,6 +22,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
     Button button5;
     Button button6;
     Button button7;
+    Button button8;
 
     private ListView act_rss_list;
 //    private RssAdapter rssAdapter;
@@ -66,6 +67,9 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
         button7 = (Button) findViewById(R.id.butt_rss_feed);
         button7.setOnClickListener(this);
 
+        button8 = (Button) findViewById(R.id.butt_about);
+        button8.setOnClickListener(this);
+
         return true;
     }
 
@@ -94,6 +98,7 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
 
                 intent = new Intent(this, ViewCIT.class);
+            //    intent = new Intent(this, RoomLocationActivity.class);
                 startActivity( intent );
                 break;
 
@@ -140,6 +145,13 @@ public class MainActivity extends ActionBarActivity implements View.OnClickListe
                 Log.i("CIT App", "Button Blackboard has been pressed");
                 //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
                 intent = new Intent(this, RssActivity.class);
+                startActivity( intent );
+                break;
+
+            case R.id.butt_about:
+                Log.i("CIT App", "Button Blackboard has been pressed");
+                //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
+                intent = new Intent(this, AboutActivity.class);
                 startActivity( intent );
                 break;
             default:

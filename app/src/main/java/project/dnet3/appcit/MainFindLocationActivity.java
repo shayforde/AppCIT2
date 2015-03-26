@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 /**
  * Created by shay on 24/03/2015.
@@ -61,21 +62,20 @@ public class MainFindLocationActivity extends ActionBarActivity implements View.
         Intent intent;
         switch (v.getId()) {
             case R.id.butt_cit_location:
-                Log.i("CIT App", "Button facebook has been pressed");
-                //Toast.makeText(this, R.string.buttViewCitBlackboard, Toast.LENGTH_SHORT).show();
+                Log.i("CIT App", "Button cit location has been pressed");
+                Toast.makeText(this, R.string.butt_cit_location, Toast.LENGTH_SHORT).show();
 
                 intent = new Intent(this, CITLocationActivity.class);
                 startActivity(intent);
                 break;
 
             case R.id.butt_room_location:
-                Log.i("CIT App", "Button find location has been pressed");
-                //Toast.makeText(this, R.string., Toast.LENGTH_SHORT).show();
+                Log.i("CIT App", "Button find room has been pressed");
+                Toast.makeText(this, R.string.butt_room_location, Toast.LENGTH_SHORT).show();
 
                 intent = new Intent(this, RoomLocationActivity.class);
                 startActivity(intent);
                 break;
-
             default:
         }
     }
