@@ -72,14 +72,72 @@
         <item>TOURISM</item>
     </string-array>
 
-    <string-array name="days_array">
-        <item>Monday</item>
-        <item>Tuesday</item>
-        <item>Wednesday</item>
-        <item>Thursday</item>
-        <item>Friday</item>
-        <item>Saturday</item>
-        <item>Sunday</item>
+    <string-array name="groups_array">
+        <item>Select Class Group</item>
+        <item>CO.CLD4-A</item>
+        <item>CO.CLD4-B</item>
+        <item>CO.CLD5-A-(New)</item>
+        <item>CO.CLD5-B-(Fin)</item>
+        <item>CO.COM1-A</item>
+        <item>CO.COM1-B</item>
+        <item>CO.COM2- A</item>
+        <item>CO.COM2- B</item>
+        <item>CO.COM3-A</item>
+        <item>CO.COM3-B</item>
+        <item>CO.DCOM1 - A</item>
+        <item>CO.DCOM1 - B</item>
+        <item>CO.DCOM2-A</item>
+        <item>CO.DCOM2-B</item>
+        <item>CO.DCOM3</item>
+        <item>CO.DCOM4</item>
+        <item>CO.DCOM5</item>
+        <item>CO.DCOM6</item>
+        <item>CO.DNET1</item>
+        <item>CO.DNET2</item>
+        <item>CO.DNET3</item>
+        <item>CO.DNET4</item>
+        <item>CO.EV.NWS5</item>
+        <item>CO.EVCISCO1</item>
+        <item>CO.EVCISCO2</item>
+        <item>CO.EVCISCOW1</item>
+        <item>CO.EVCOM1-A</item>
+        <item>CO.EVCOM1-B</item>
+        <item>CO.EVCOM2</item>
+        <item>CO.EVCOM3</item>
+        <item>CO.EVCOMPTIA</item>
+        <item>CO.EVMScCOMSD</item>
+        <item>CO.EVMScCOMSD.A</item>
+        <item>CO.EVPCHW</item>
+        <item>CO.FREECHOICE</item>
+        <item>CO.HCCLD</item>
+        <item>CO.HDCLD</item>
+        <item>CO.HDMOB-A-(New)</item>
+        <item>CO.HDMOB-B-(Fin)</item>
+        <item>CO.HDSDEV1</item>
+        <item>CO.ITM1</item>
+        <item>CO.ITM2</item>
+        <item>CO.ITM3</item>
+        <item>CO.ITM4</item>
+        <item>CO.ITS1- A</item>
+        <item>CO.ITS1- B</item>
+        <item>CO.ITS2</item>
+        <item>CO.ITS3</item>
+        <item>CO.LINUX</item>
+        <item>CO.MScCOMSD.B</item>
+        <item>CO.MSCRSCH</item>
+        <item>CO.MSCRSCHProj</item>
+        <item>CO.MScSD</item>
+        <item>CO.NWS5</item>
+        <item>CO.VM-WARE</item>
+        <item>CO.WEB1</item>
+        <item>CO.WEB2</item>
+        <item>CO.WEB3</item>
+        <item>CO.WEB4</item>
+        <item>COMPUTING ELECTIVE HCI</item>
+        <item>COMPUTING ELECTIVE HDW</item>
+        <item>COMPUTING ELECTIVEMedia DF</item>
+        <item>COMPUTING ELECTIVE WEB</item>
+
     </string-array>
 
 </resources>

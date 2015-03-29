@@ -3,6 +3,9 @@ package project.dnet3.appcit;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.Bundle;
@@ -35,6 +38,8 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  * Created by shay on 23/03/2015.
@@ -252,20 +257,47 @@ Log.i("MYCIT", url);
     }
 
     void displayRoomData( RoomFullData room ){
-        String url;
+        String url1;
+        String url2;
         if(room.getFloorLevel().equals("G")){
-            Picasso.with( this ).load( "http://192.168.1.102/joomla/images/GroundFloor/FloorG0.png" ).into( img1 );
-            url = "http://192.168.1.102/joomla/images/GroundFloor/Floor" + room.getMapSection() + ".PNG";
+            url1 = "http://192.168.1.102/joomla/images/GroundFloor/FloorG0.PNG";
+            url2 = "http://192.168.1.102/joomla/images/GroundFloor/Floor" + room.getMapSection() + ".PNG";
         }
         else{
-
-            Picasso.with( this ).load( "http://192.168.1.102/joomla/images/FirstFloor/Floor10.PNG" ).into( img1 );
-            url = "http://192.168.1.102/joomla/images/FirstFloor/Floor" + room.getMapSection() + ".PNG";
+            url1 = "http://192.168.1.102/joomla/images/FirstFloor/Floor10.png";
+            url2 = "http://192.168.1.102/joomla/images/FirstFloor/Floor" + room.getMapSection() + ".PNG";
         }
+        Picasso.with( this ).load(url1).into( img1 );
+        Picasso.with( this ).load( url2 ).into( img2 );
+
+        Paint paint = new Paint();
+        paint.setColor(0xB51845);
+        paint.setStrokeWidth(1);
+
+        try {
+            Bitmap bm = Bitmap.createBitmap(10, 15, Bitmap.Config.ALPHA_8);
+
+            Canvas cv = new Canvas(bm);
+
+            cv.drawBitmap(bm, 0, 0, null);
+            Log.i("MYCIT", "coordinates = " + room.getRoomCoordinates());
+            int x = 0;
+            int y = 0;
+            Pattern pattern = Pattern.compile(",*");
+            Matcher matcher = pattern.matcher(room.getRoomCoordinates());
+            if (matcher.find()) {
+                String sx = room.getRoomCoordinates().substring(0, matcher.start());
+                String sy = room.getRoomCoordinates().substring(matcher.end());
+                x = Integer.parseInt(sx);
+                y = Integer.parseInt(sy);
+            }
+            cv.drawCircle(x, y, 10, paint);
+
+            img2.setImageDrawable(new BitmapDrawable(getResources(), bm));
+        }
+        catch(Exception e){}
 
 
-        //Picasso.with( this ).load("http://postimg.org/image/wjidfl5pd/").into( img );
-        Picasso.with( this ).load( url ).into( img2 );
 /*
         try {
             URL thumb_u = new URL( url );
@@ -287,7 +319,7 @@ Log.i("MYCIT", url);
         catch(Exception e){}
 
 */
-       Log.i("MyCIT", url );
+       Log.i("MyCIT", url2);
     }
 
     public Bitmap getRemoteImage(final URL aURL) {
